@@ -40,7 +40,7 @@ const sections = [
 ];
 
 const Directory = () => {
-	const [section, setSection] = useState(sections);
+	const [section] = useState(sections);
 
 	return (
 		<div className='directory-menu'>
