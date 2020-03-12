@@ -22,17 +22,13 @@ const App = () => {
 				});
 			}
 
-			// setCurrentUser(userAuth);
+			setCurrentUser(null);
 		});
 
 		return () => {
 			unsubscribeFromAuth();
 		};
 	}, []);
-
-	useEffect(() => {
-		console.log(currentUser);
-	}, [currentUser]);
 
 	return (
 		<div>
