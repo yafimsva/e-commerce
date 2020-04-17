@@ -14,7 +14,6 @@ import {
 
 const CollectionItem = ({ item, addItem }) => {
 	const { name, price, imageUrl } = item;
-	console.log('1231231231');
 
 	return (
 		<CollectionItemContainer>
