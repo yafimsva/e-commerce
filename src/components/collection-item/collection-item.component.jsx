@@ -9,11 +9,12 @@ import {
 	AddButton,
 	BackgroundImage,
 	NameContainer,
-	PriceContainer
+	PriceContainer,
 } from './collection-item.styles.jsx';
 
 const CollectionItem = ({ item, addItem }) => {
 	const { name, price, imageUrl } = item;
+	console.log(name);
 
 	return (
 		<CollectionItemContainer>
@@ -29,8 +30,8 @@ const CollectionItem = ({ item, addItem }) => {
 	);
 };
 
-const mapDispatchToProps = dispatch => ({
-	addItem: item => dispatch(addItem(item))
+const mapDispatchToProps = (dispatch) => ({
+	addItem: (item) => dispatch(addItem(item)),
 });
 
 export default connect(null, mapDispatchToProps)(CollectionItem);
