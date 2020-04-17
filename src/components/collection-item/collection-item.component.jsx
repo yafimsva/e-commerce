@@ -14,7 +14,7 @@ import {
 
 const CollectionItem = ({ item, addItem }) => {
 	const { name, price, imageUrl } = item;
-	console.log(name);
+	console.log('hey');
 
 	return (
 		<CollectionItemContainer>
